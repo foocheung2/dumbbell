@@ -30,9 +30,7 @@ s1<-s %>% mutate("type" = 'Gender earnings disparity')
 Plot
 
 <pre>
-dumbbell::dumbbell(xdf=s1,id="School",key = "type", column1 = "Women", column2 = "Men", delt=1 ,
-arrow = 1, lab1 = "Women", lab2="Men", p_col1 = "red", p_col2 = "blue" ,pt_val = 1 , pval = 2, 
-textsize = 4) + 
+dumbbell::dumbbell(xdf=s1,id="School",key = "type", column1 = "Women", column2 = "Men", delt=1 ,arrow = 1, lab1 = "Women", lab2="Men", p_col1 = "red", p_col2 = "blue" ,pt_val = 1 , pval = 2, textsize = 3) + 
 xlim(60,170) + 
 facet_wrap( . ~ type)
 </pre>
